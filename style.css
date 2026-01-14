@@ -6,6 +6,7 @@
   border: 2px solid #000;
   border-radius: 15px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 10px;
 }
 
 .projectCircle>img {
