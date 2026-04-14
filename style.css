@@ -1,0 +1,18 @@
+* {
+  font-family: "Noto Sans Mono", sans-serif;
+  font-size: 10pt;
+}
+
+#output {
+  display: block;
+  /* height: 250px; */
+  overflow: auto;
+  /* background-color: aqua; */
+}
+
+#inputarea {
+  width: 50%;
+  resize: none;
+  border: none;
+  outline: none;
+}
