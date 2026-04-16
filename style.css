@@ -1,6 +1,16 @@
 * {
   font-family: "Noto Sans Mono", sans-serif;
   font-size: 10pt;
+  background-color: black;
+  color: white;
+}
+
+code {
+  color: gray;
+}
+
+ul {
+  margin-top: 5px;
 }
 
 #output {
