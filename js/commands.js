@@ -1,19 +1,24 @@
 let commands = {
+  prevIndex: 0,
+  prevCommands: ["help", "cat about.txt"],
   parseCommand: function(command) {
+    if (this.prevCommands[this.prevCommands.length - 1] != command){
+      this.prevCommands.push(command)
+    }
     switch (command) {
       case "help":
-        commands.help()
+        this.help()
         break;
       case "ls":
-        commands.ls()
+        this.ls()
         break;
       case "pwd":
-        commands.pwd()
+        this.pwd()
       case "":
         break;
       default:
         if (command.startsWith("cat ")) {
-          commands.cat(command.substring(4))
+          this.cat(command.substring(4))
         // }else if (command.startsWith("cd ")) {
         //   commands.cd(command.substring(3))
         } else {
