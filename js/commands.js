@@ -14,6 +14,8 @@ let commands = {
         break;
       case "pwd":
         this.pwd()
+      case "blog":
+        open("blog/index.html")
       case "":
         break;
       default:
@@ -57,6 +59,6 @@ let commands = {
     console.log(filesystem[fileUtils.pwd], fileUtils.pwd)
   },
   help: function() {
-    util.unsafePrnt("help command ran.<br>all commands are as follows:<br>ls: lists directory<br>cat [filename]: prints the contents of a file (like <code>about.txt</code>!! try it!)")
+    util.unsafePrnt("help command ran.<br>all commands are as follows:<br>ls: lists directory<br>cat [filename]: prints the contents of a file (like <code>about.txt</code>!! try it!)<br>blog: open my blog in a new tab")
   },
 }

@@ -14,8 +14,14 @@ inputarea.addEventListener("keydown", (e) => {
     console.log(commands.prevIndex)
     console.log(commands.prevCommands[commands.prevCommands.length - commands.prevIndex])
     inputarea.value = commands.prevCommands[commands.prevCommands.length - commands.prevIndex]
-
   }
 });
+window.addEventListener("DOMContentLoaded", () => {
+  util.unsafePrnt(`+--------------------------+
+                   | Welcome to my portfolio! |
+                   +--------------------------+
+                   P.S.: TRY to run <code>blog</code>!`.replaceAll("\n", "<br>"))
 
+})
+  
 
