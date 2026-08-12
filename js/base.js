@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", () => {
   util.unsafePrnt(`+--------------------------+
                    | Welcome to my portfolio! |
                    +--------------------------+
-                   P.S.: TRY to run <code>blog</code>!`.replaceAll("\n", "<br>"))
+                   P.S.: try to run <code>blog</code>!`.replaceAll("\n", "<br>"))
 
 })
   
